@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        div {
+            text-align: center;
+        }
+
+        footer{
+            position : relative;
+            transform : translateY(-100%);
+        }
+
+        #button_group button{ 
+            border: 1px solid skyblue; 
+            background-color: rgba(0,0,0,0); 
+            color: skyblue; padding: 5px; 
+        }
+        #button_group input{ 
+            border: 1px solid skyblue; 
+            background-color: rgba(0,0,0,0); 
+            color: skyblue; padding: 5px; 
+        }
+    </style>
+    <head>
+        <script>
+            function aaa(){
+                alert("alert문 예제")
+            }
+        </script>
+    </head>
+    <body>
+
+        <div>
+            <h1>3페이지</h1>
+        </div>
+
+        <div id="button_group">
+            <button onclick="aaa()">alert예제</button>
+        </div>
+
+        <br>
+
+        <div id="button_group">
+            <input type="button" value="메인"
+            onClick="location.href='index.html'">
+        </div>
+        <br>
+        <div id="button_group">
+            <input type="button" value="1페이지"
+            onClick="location.href='one.html'">
+        </div>
+        <br>
+        <div id="button_group">
+            <input type="button" value="2페이지"
+            onClick="location.href='two.html'">
+        </div>
+        <br>
+        <div id="button_group">
+            <input type="button" value="3페이지"
+            onClick="location.href='three.html'">
+        </div>
+        <br>
+        <div id="button_group">
+            <input type="button" value="4페이지"
+            onClick="location.href='four.html'">
+        </div>
+        <br>
+        <div id="button_group">
+            <input type="button" value="5페이지"
+            onClick="location.href='five.html'">
+        </div>
+
+        <!--줄내림-->
+        <br>
+        <!--줄내림-->
+
+        <!--줄내림-->
+        <br>
+        <!--줄내림-->
+
+        <div id="button_group">
+            <footer>
+                <button onclick="history.back()">뒤로가기</button>
+                <button onclick="history.forward()">앞으로가기</button>
+            </footer>
+        </div>
+    </body>
+</html>
